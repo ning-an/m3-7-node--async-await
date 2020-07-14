@@ -1,0 +1,36 @@
+body {
+    background-color: bisque;
+}
+
+.myform {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: white solid 2px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    background-color: #eee;
+    box-shadow: 0 0 5px 2px lightgrey;
+}
+
+.select {
+    border-bottom: white 2px solid;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.options {
+    margin-top: 20px;
+    height: 3em;
+    border-radius: 5px;
+}
+
+.output {
+    flex-basis: 80%;
+}

@@ -24,7 +24,12 @@ express()
   // endpoints
   .get('/joke/:type', async (req, res) => {
     const {type} = req.params;
-    res.status(200).send(await handleJoke(type));
+    res.status(200).json(await handleJoke(type));
+  })
+
+  //stretch goal option A
+  .get('/joke', (req, res) => {
+    res.render('pages/joke.ejs')
   })
 
   .listen(8000, () => console.log(`Listening on port 8000`));
